@@ -1819,7 +1819,7 @@ function forum_list_styles()
 	$d = dir(PUN_ROOT.'style');
 	while (($entry = $d->read()) !== false)
 	{
-		if ($entry{0} == '.')
+		if ($entry[0] == '.')
 			continue;
 
 		if (substr($entry, -4) == '.css')
