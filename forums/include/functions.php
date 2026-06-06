@@ -2047,7 +2047,7 @@ function url_valid($url)
 		return FALSE;	// Unrecognised URI scheme. Default to FALSE.
 	}
 	// Validate host name conforms to DNS "dot-separated-parts".
-	if ($m{'regname'}) // If host regname specified, check for DNS conformance.
+	if ($m['regname']) // If host regname specified, check for DNS conformance.
 	{
 		if (!preg_match('/# HTTP DNS host name.
 			^					   # Anchor to beginning of string.
