@@ -73,8 +73,8 @@ error_reporting(E_ALL ^ E_NOTICE);
 setlocale(LC_CTYPE, 'C');
 
 // Strip slashes from GET/POST/COOKIE/REQUEST/FILES (if magic_quotes_gpc is enabled)
-if (!defined('FORUM_DISABLE_STRIPSLASHES') && get_magic_quotes_gpc())
-{
+if (false)
+    {
 	function stripslashes_array($array)
 	{
 		return is_array($array) ? array_map('stripslashes_array', $array) : stripslashes($array);
